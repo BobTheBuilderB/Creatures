@@ -19,21 +19,6 @@
         var keyIsPressed = false;
         processing.keyPressed = function () { keyIsPressed = true; };
         processing.keyReleased = function () { keyIsPressed = false; };
-        
-        var sine = function(deg){
-        return sin(deg/(180/3.1415926535));
-        }
-        var cosine = function(deg){
-            return cos(deg/(180/3.1415926535));
-        }
-        var rotate2 = function(deg){
-            rotate(deg/(180/3.1415926535));
-        }
-        function getImage(s) {
-            var url = "https://www.kasandbox.org/stylesheets/scratchpads-exec-package/images/" + s + ".png";
-            processing.externals.sketch.imageCache.add(url);
-            return processing.loadImage(url);
-        }
 
         with (processing) {
            
