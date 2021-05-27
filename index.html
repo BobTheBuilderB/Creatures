@@ -11,11 +11,7 @@
     var processing = new Processing(canvas, function(processing) {
         processing.size(400, 400);
         processing.background(0xFFF);
-
-        var mouseIsPressed = false;
-        processing.mousePressed = function () { mouseIsPressed = true; };
-        processing.mouseReleased = function () { mouseIsPressed = false; };
-
+      
         with (processing) {
            
 
@@ -620,12 +616,6 @@ mouseDragged = function(){
         text("Many WOW", random(0,width-100),random(0,height-100));
     }
 };
-
-
-
-
-
-
 
         }
         if (typeof draw !== 'undefined') processing.draw = draw;
