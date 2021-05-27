@@ -16,10 +16,6 @@
         processing.mousePressed = function () { mouseIsPressed = true; };
         processing.mouseReleased = function () { mouseIsPressed = false; };
 
-        var keyIsPressed = false;
-        processing.keyPressed = function () { keyIsPressed = true; };
-        processing.keyReleased = function () { keyIsPressed = false; };
-
         with (processing) {
            
 
@@ -600,7 +596,6 @@ ff2.fishfood();
 };
 
 var draw= function() {
-    frameRate(15);
     background(0, 105, 196);
     displayFish1();
     displayFood1();
